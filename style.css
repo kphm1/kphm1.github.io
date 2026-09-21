@@ -826,4 +826,125 @@ main {
     padding-right: 15px;
   }
 
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: 320px 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  border: 1px solid #243044;
+}
+
+.about-content p {
+  max-width: 750px;
+
+  color: #cbd5e1;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-intro {
+  max-width: 650px;
+
+  color: #94a3b8;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+
+  margin-bottom: 35px;
+}
+
+.contact-links {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.contact-links a {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 24px;
+
+  background: #111827;
+
+  border: 1px solid #243044;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: #60a5fa;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contact-links a:hover {
+  transform: translateY(-3px);
+
+  border-color: #60a5fa;
+
+  text-decoration: none;
+}
+
+.contact-links span {
+  margin-top: 6px;
+
+  color: #cbd5e1;
+
+  font-size: 0.9rem;
+
+  font-weight: 400;
+}
+
+
+@media (max-width: 800px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .about-photo {
+    max-width: 320px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
 }
