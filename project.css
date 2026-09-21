@@ -405,4 +405,119 @@
     padding-right: 15px;
     padding-bottom: 70px;
   }
+/* =========================================
+   CAD GALLERY
+========================================= */
+
+.cad-gallery {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 28px;
+
+  margin-top: 50px;
+}
+
+.cad-gallery-item {
+  overflow: hidden;
+
+  background: #111827;
+
+  border: 1px solid #243044;
+  border-radius: 14px;
+}
+
+.cad-gallery-item img {
+  width: 100%;
+  height: 420px;
+
+  object-fit: contain;
+
+  display: block;
+
+  background: white;
+}
+
+.cad-gallery-text {
+  padding: 26px;
+}
+
+.cad-gallery-text h3 {
+  color: white;
+
+  font-size: 1.25rem;
+
+  margin-bottom: 10px;
+}
+
+.cad-gallery-text p {
+  color: #94a3b8;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   DOCUMENTATION NOTE
+========================================= */
+
+.documentation-note {
+  margin-top: 45px;
+
+  padding: 32px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 30px;
+
+  background: #111827;
+
+  border: 1px solid #243044;
+  border-radius: 14px;
+}
+
+.documentation-note h3 {
+  color: white;
+
+  margin-bottom: 8px;
+}
+
+.documentation-note p {
+  color: #94a3b8;
+
+  line-height: 1.7;
+}
+
+.documentation-note span {
+  color: #60a5fa;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+@media (max-width: 800px) {
+
+  .cad-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cad-gallery-item img {
+    height: 320px;
+  }
+
+  .documentation-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .documentation-note span {
+    white-space: normal;
+  }
+
 }
