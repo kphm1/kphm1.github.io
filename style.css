@@ -405,6 +405,8 @@ main {
   .project-content {
     padding: 22px;
   }
+}
+
 /* =========================================
    PROJECT PAGE NAVIGATION
 ========================================= */
@@ -825,6 +827,7 @@ main {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
 
 /* =========================================
    ABOUT SECTION
@@ -946,6 +949,8 @@ main {
   .contact-links {
     grid-template-columns: 1fr;
   }
+}
+
 /* =========================================
    FINAL SIZE / LAYOUT OVERRIDES
 ========================================= */
