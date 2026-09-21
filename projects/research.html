@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Large-Deformation Wrinkling FEA | Kyle Pham</title>
+
+  <link rel="stylesheet" href="../style.css?v=5">
+</head>
+
+<body>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+
+    <a href="../index.html" class="back-link">
+      ← Kyle Pham
+    </a>
+
+    <div class="project-nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+
+  </nav>
+
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+
+    <p class="section-label">
+      RESEARCH · NONLINEAR FINITE ELEMENT ANALYSIS
+    </p>
+
+    <h1>
+      Large-Deformation<br>
+      Wrinkling FEA
+    </h1>
+
+    <p class="project-lead">
+      Computational modeling of strain-dependent surface instabilities
+      using nonlinear finite element analysis, hyperelastic constitutive
+      models, and numerical continuation.
+    </p>
+
+    <div class="tags project-hero-tags">
+      <span>COMSOL</span>
+      <span>Python</span>
+      <span>Nonlinear FEA</span>
+      <span>Hyperelasticity</span>
+      <span>Numerical Methods</span>
+    </div>
+
+  </section>
+
+
+  <!-- HERO IMAGE -->
+  <section class="project-wide-image">
+
+    <img
+      src="../assets/images/research-comsol.png"
+      alt="Large deformation nonlinear FEA simulations at multiple pre-strain conditions"
+    >
+
+  </section>
+
+
+  <!-- OVERVIEW -->
+  <section class="project-page-section">
+
+    <div class="project-two-column">
+
+      <div>
+        <p class="section-label">OVERVIEW</p>
+
+        <h2>
+          Modeling instability beyond the linear regime.
+        </h2>
+      </div>
+
+      <div class="project-body-text">
+
+        <p>
+          I developed nonlinear finite element models to investigate
+          surface instability and post-bifurcation deformation under
+          large imposed pre-strain.
+        </p>
+
+        <p>
+          The work required modeling large geometric deformation,
+          hyperelastic material behavior, and the transition from a
+          nominally flat configuration into a periodic wrinkled state.
+        </p>
+
+        <p>
+          Because this work is part of ongoing research, application-specific
+          details, material parameters, and proprietary experimental
+          information are intentionally omitted.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MY ROLE -->
+  <section class="project-page-section project-section-dark">
+
+    <p class="section-label">MY ROLE</p>
+
+    <h2>Simulation development and computational analysis.</h2>
+
+    <div class="responsibility-grid">
+
+      <div class="responsibility-card">
+        <span class="card-number">01</span>
+
+        <h3>Nonlinear FEA</h3>
+
+        <p>
+          Built large-deformation finite element models in COMSOL to
+          resolve strain-driven wrinkling and post-bifurcation behavior.
+        </p>
+      </div>
+
+
+      <div class="responsibility-card">
+        <span class="card-number">02</span>
+
+        <h3>Hyperelastic Modeling</h3>
+
+        <p>
+          Implemented nonlinear constitutive behavior for highly
+          deformable elastomeric domains using hyperelastic material
+          formulations.
+        </p>
+      </div>
+
+
+      <div class="responsibility-card">
+        <span class="card-number">03</span>
+
+        <h3>Solver Development</h3>
+
+        <p>
+          Developed continuation strategies and controlled perturbations
+          to move the model through highly nonlinear bifurcation regions.
+        </p>
+      </div>
+
+
+      <div class="responsibility-card">
+        <span class="card-number">04</span>
+
+        <h3>Model Validation</h3>
+
+        <p>
+          Compared simulated wavelength and amplitude behavior with
+          analytical predictions and experimentally observed trends.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TECHNICAL CHALLENGE -->
+  <section class="project-page-section">
+
+    <div class="project-two-column">
+
+      <div>
+        <p class="section-label">TECHNICAL CHALLENGE</p>
+
+        <h2>
+          Solving through a bifurcation.
+        </h2>
+      </div>
+
+      <div class="project-body-text">
+
+        <p>
+          The primary numerical challenge was not simply applying a load.
+          The structure transitions between different equilibrium states
+          as instability develops.
+        </p>
+
+        <p>
+          Near the bifurcation point, conventional load stepping can
+          become unstable because small geometric changes produce large
+          changes in the nonlinear solution.
+        </p>
+
+        <p>
+          I addressed this using controlled continuation, smaller solver
+          increments near the instability region, and small geometric or
+          load perturbations to break numerical symmetry and allow the
+          model to enter the wrinkled equilibrium branch.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WORKFLOW -->
+  <section class="project-page-section project-section-dark">
+
+    <p class="section-label">SIMULATION WORKFLOW</p>
+
+    <h2>From pre-strain to post-bifurcation equilibrium.</h2>
+
+    <div class="workflow">
+
+      <div class="workflow-step">
+        <span>01</span>
+        <h3>Geometry</h3>
+        <p>
+          Construct representative multilayer computational geometry.
+        </p>
+      </div>
+
+      <div class="workflow-arrow">→</div>
+
+      <div class="workflow-step">
+        <span>02</span>
+        <h3>Pre-Strain</h3>
+        <p>
+          Establish the prescribed deformation state before release.
+        </p>
+      </div>
+
+      <div class="workflow-arrow">→</div>
+
+      <div class="workflow-step">
+        <span>03</span>
+        <h3>Perturbation</h3>
+        <p>
+          Introduce a small disturbance to break perfect numerical symmetry.
+        </p>
+      </div>
+
+      <div class="workflow-arrow">→</div>
+
+      <div class="workflow-step">
+        <span>04</span>
+        <h3>Continuation</h3>
+        <p>
+          Progressively release the structure using nonlinear solver stepping.
+        </p>
+      </div>
+
+      <div class="workflow-arrow">→</div>
+
+      <div class="workflow-step">
+        <span>05</span>
+        <h3>Results</h3>
+        <p>
+          Extract wrinkle wavelength, amplitude, deformation, and stress.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOAD CASES -->
+  <section class="project-page-section">
+
+    <p class="section-label">PARAMETRIC STUDY</p>
+
+    <h2>Evaluating behavior across pre-strain conditions.</h2>
+
+    <p class="project-section-intro">
+      Multiple pre-strain conditions were simulated to evaluate how
+      increasing deformation influenced the resulting instability
+      morphology and nonlinear response.
+    </p>
+
+    <div class="research-result">
+
+      <img
+        src="../assets/images/research-comsol.png"
+        alt="Comparison of nonlinear wrinkling simulations at multiple pre-strain conditions"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPUTATIONAL METHODS -->
+  <section class="project-page-section project-section-dark">
+
+    <div class="project-two-column">
+
+      <div>
+        <p class="section-label">COMPUTATIONAL METHODS</p>
+
+        <h2>
+          FEA supported by analytical modeling.
+        </h2>
+      </div>
+
+      <div class="project-body-text">
+
+        <p>
+          In parallel with the finite element model, I used Python-based
+          analytical models to evaluate expected trends in instability
+          wavelength and amplitude.
+        </p>
+
+        <p>
+          These lower-order models provided an independent reference
+          against which the nonlinear finite element solution could be
+          evaluated.
+        </p>
+
+        <p>
+          The combined workflow helped separate numerical artifacts from
+          physically meaningful behavior and provided a framework for
+          identifying discrepancies between theory, simulation, and
+          experiment.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TAKEAWAYS -->
+  <section class="project-page-section">
+
+    <p class="section-label">ENGINEERING TAKEAWAYS</p>
+
+    <h2>What this project developed.</h2>
+
+    <div class="takeaway-grid">
+
+      <div>
+        <h3>Nonlinear Mechanics</h3>
+        <p>
+          Experience modeling systems where geometry and material
+          response change substantially during loading.
+        </p>
+      </div>
+
+      <div>
+        <h3>Solver Strategy</h3>
+        <p>
+          Practical understanding of convergence, bifurcation,
+          perturbation sensitivity, and continuation methods.
+        </p>
+      </div>
+
+      <div>
+        <h3>Validation</h3>
+        <p>
+          Experience comparing numerical predictions against analytical
+          models and experimental trends rather than treating FEA as a
+          standalone result.
+        </p>
+      </div>
+
+      <div>
+        <h3>Technical Communication</h3>
+        <p>
+          Translating complex simulation behavior into interpretable
+          engineering results for an interdisciplinary research team.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEXT PROJECT -->
+  <section class="next-project">
+
+    <p class="section-label">NEXT PROJECT</p>
+
+    <a href="dual-stuffing-box.html">
+      Dual Stuffing Box →
+    </a>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Kyle Pham</p>
+  </footer>
+
+</body>
+
+</html>
