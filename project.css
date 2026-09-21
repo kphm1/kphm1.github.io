@@ -519,5 +519,144 @@
   .documentation-note span {
     white-space: normal;
   }
+/* =========================================
+   FLOW TEE FEATURE SECTION
+========================================= */
+
+.flow-feature-grid {
+  display: grid;
+
+  grid-template-columns: 1.05fr 0.95fr;
+
+  gap: 55px;
+
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.flow-feature-visual {
+  overflow: hidden;
+
+  border: 1px solid #243044;
+  border-radius: 14px;
+
+  background: white;
+}
+
+.flow-feature-visual img {
+  display: block;
+
+  width: 100%;
+  height: 520px;
+
+  object-fit: contain;
+}
+
+.flow-feature-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.flow-feature {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 18px;
+}
+
+.flow-feature > span {
+  color: #60a5fa;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  padding-top: 5px;
+}
+
+.flow-feature h3 {
+  color: white;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 6px;
+}
+
+.flow-feature p {
+  color: #94a3b8;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   INTERFACE GRID
+========================================= */
+
+.interface-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+  margin-top: 50px;
+}
+
+.interface-card {
+  padding: 30px;
+
+  background: #111827;
+
+  border: 1px solid #243044;
+
+  border-radius: 14px;
+}
+
+.interface-label {
+  color: #60a5fa;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  margin-bottom: 15px;
+}
+
+.interface-card h3 {
+  color: white;
+
+  font-size: 1.3rem;
+
+  margin-bottom: 10px;
+}
+
+.interface-card p {
+  color: #94a3b8;
+
+  line-height: 1.7;
+}
+
+
+@media (max-width: 900px) {
+
+  .flow-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-feature-visual img {
+    height: 380px;
+  }
+
+  .interface-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
