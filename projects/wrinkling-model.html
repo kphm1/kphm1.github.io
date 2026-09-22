@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Analytical wrinkling model and validation project by Kyle Pham using Python, NumPy, SciPy, and Matplotlib."
+  >
+
+  <title>
+    Analytical Wrinkling & Model Validation | Kyle Pham
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="../style.css?v=8"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../project.css?v=5"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- ========================================
+       PROJECT NAVIGATION
+  ========================================= -->
+
+  <nav class="project-nav">
+
+    <a
+      href="../index.html"
+      class="back-link"
+    >
+      ← Kyle Pham
+    </a>
+
+
+    <div class="project-nav-links">
+
+      <a href="../index.html#projects">
+        Projects
+      </a>
+
+      <a href="../index.html#about">
+        About
+      </a>
+
+      <a
+        href="../assets/docs/Kyle_Pham_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+
+      <a href="../index.html#contact">
+        Contact
+      </a>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ========================================
+       HERO
+  ========================================= -->
+
+  <section class="project-hero">
+
+    <p class="section-label">
+      COMPUTATIONAL MODELING · PYTHON
+    </p>
+
+    <h1>
+      Analytical Wrinkling & Model Validation
+    </h1>
+
+    <p class="project-lead">
+      Physics-based computational modeling of strain-dependent surface
+      instability behavior, developed as an analytical reference for
+      experimental observations and nonlinear finite-element simulations.
+    </p>
+
+
+    <div class="tags project-hero-tags">
+
+      <span>Python</span>
+
+      <span>NumPy</span>
+
+      <span>SciPy</span>
+
+      <span>Matplotlib</span>
+
+      <span>Model Validation</span>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       MAIN FIGURE
+  ========================================= -->
+
+  <div class="project-wide-image">
+
+    <img
+      src="../assets/images/wrinkling-model.png"
+      alt="Analytical wrinkling model showing normalized wavelength, amplitude, and stiffness trends"
+    >
+
+  </div>
+
+
+
+  <!-- ========================================
+       OVERVIEW
+  ========================================= -->
+
+  <section class="project-page-section">
+
+    <div class="project-two-column">
+
+
+      <div>
+
+        <p class="section-label">
+          OVERVIEW
+        </p>
+
+        <h2>
+          From Physical Theory to Computational Model
+        </h2>
+
+      </div>
+
+
+      <div class="project-body-text">
+
+        <p>
+          This project was developed in support of a broader research study
+          investigating strain-dependent wrinkling in soft layered systems.
+          The objective was to build an analytical model that could provide
+          an independent physics-based reference alongside experimental
+          observations and nonlinear finite-element simulations.
+        </p>
+
+        <p>
+          The Python implementation predicts key instability characteristics,
+          including wrinkle wavelength and amplitude, as loading conditions
+          change. The model combines analytical scaling relationships with
+          numerical optimization to study how effective mechanical properties
+          influence the predicted response.
+        </p>
+
+        <p>
+          Because the associated research is ongoing, the public version shown
+          here uses generalized terminology and normalized visualization while
+          preserving the structure of the computational workflow.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       MODELING APPROACH
+  ========================================= -->
+
+  <section
+    class="project-page-section project-section-dark"
+  >
+
+    <p class="section-label">
+      MODELING APPROACH
+    </p>
+
+    <h2>
+      Translating Mechanics into a Numerical Workflow
+    </h2>
+
+
+    <div class="responsibility-grid">
+
+
+      <div class="responsibility-card">
+
+        <span class="card-number">
+          01
+        </span>
+
+        <h3>
+          Analytical Mechanics
+        </h3>
+
+        <p>
+          Implemented mechanics-based relationships describing the onset
+          and evolution of wrinkling in a layered elastic system.
+        </p>
+
+      </div>
+
+
+      <div class="responsibility-card">
+
+        <span class="card-number">
+          02
+        </span>
+
+        <h3>
+          Parameter Optimization
+        </h3>
+
+        <p>
+          Used numerical optimization to determine model parameters that
+          best reproduced observed wavelength and amplitude trends.
+        </p>
+
+      </div>
+
+
+      <div class="responsibility-card">
+
+        <span class="card-number">
+          03
+        </span>
+
+        <h3>
+          Sensitivity Analysis
+        </h3>
+
+        <p>
+          Explored how changes in effective stiffness and characteristic
+          depth influenced predicted instability behavior.
+        </p>
+
+      </div>
+
+
+      <div class="responsibility-card">
+
+        <span class="card-number">
+          04
+        </span>
+
+        <h3>
+          Model Validation
+        </h3>
+
+        <p>
+          Compared analytical predictions against reference measurements
+          and finite-element trends to evaluate consistency across modeling
+          approaches.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       COMPUTATIONAL WORKFLOW
+  ========================================= -->
+
+  <section class="project-page-section">
+
+    <p class="section-label">
+      COMPUTATIONAL WORKFLOW
+    </p>
+
+    <h2>
+      Model → Optimize → Compare → Interpret
+    </h2>
+
+
+    <div class="workflow">
+
+
+      <div class="workflow-step">
+
+        <span>
+          01
+        </span>
+
+        <h3>
+          Define Inputs
+        </h3>
+
+        <p>
+          Establish loading conditions and effective mechanical parameters.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-arrow">
+        →
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>
+          02
+        </span>
+
+        <h3>
+          Evaluate Model
+        </h3>
+
+        <p>
+          Compute predicted wavelength, amplitude, and instability behavior.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-arrow">
+        →
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>
+          03
+        </span>
+
+        <h3>
+          Optimize
+        </h3>
+
+        <p>
+          Adjust selected model parameters using numerical minimization.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-arrow">
+        →
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>
+          04
+        </span>
+
+        <h3>
+          Validate
+        </h3>
+
+        <p>
+          Compare predicted trends with independent reference data.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-arrow">
+        →
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>
+          05
+        </span>
+
+        <h3>
+          Interpret
+        </h3>
+
+        <p>
+          Use discrepancies between approaches to investigate the underlying
+          mechanics.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       RESEARCH CONTEXT
+  ========================================= -->
+
+  <section
+    class="project-page-section project-section-dark"
+  >
+
+    <div class="project-two-column">
+
+
+      <div>
+
+        <p class="section-label">
+          RESEARCH CONTEXT
+        </p>
+
+        <h2>
+          Supporting a Larger Wrinkling Study
+        </h2>
+
+      </div>
+
+
+      <div class="project-body-text">
+
+        <p>
+          The analytical model forms one component of a larger research
+          workflow combining experiments, computational mechanics, and
+          theoretical modeling.
+        </p>
+
+        <p>
+          Nonlinear finite-element simulations capture the full deformation
+          behavior numerically, while the analytical model provides a simpler
+          physics-based framework for evaluating expected trends and testing
+          potential mechanical explanations.
+        </p>
+
+        <p>
+          Comparing these independent approaches helps distinguish robust
+          physical behavior from effects associated with a particular
+          numerical model or fitting procedure.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       VALIDATION STRATEGY
+  ========================================= -->
+
+  <section class="project-page-section">
+
+    <p class="section-label">
+      VALIDATION STRATEGY
+    </p>
+
+    <h2>
+      Cross-Checking Independent Models
+    </h2>
+
+    <p class="project-section-intro">
+      Rather than relying on a single simulation method, the research
+      workflow compares multiple independent representations of the same
+      physical behavior.
+    </p>
+
+
+    <div class="takeaway-grid">
+
+
+      <div>
+
+        <h3>
+          Analytical Model
+        </h3>
+
+        <p>
+          Provides a computationally inexpensive physics-based prediction
+          of instability trends.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Finite-Element Model
+        </h3>
+
+        <p>
+          Resolves large-deformation mechanics numerically and captures
+          nonlinear behavior beyond the simplified analytical framework.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Experimental Reference
+        </h3>
+
+        <p>
+          Provides an independent physical benchmark for assessing whether
+          predicted trends correspond to observed behavior.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Cross-Validation
+        </h3>
+
+        <p>
+          Agreement and disagreement between methods are used to identify
+          which aspects of the mechanics require additional investigation.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       ENGINEERING TAKEAWAYS
+  ========================================= -->
+
+  <section
+    class="project-page-section project-section-dark"
+  >
+
+    <p class="section-label">
+      ENGINEERING TAKEAWAYS
+    </p>
+
+    <h2>
+      What I Learned
+    </h2>
+
+
+    <div class="takeaway-grid">
+
+
+      <div>
+
+        <h3>
+          Model Complexity Should Match the Question
+        </h3>
+
+        <p>
+          Analytical models and finite-element models provide different
+          levels of detail. Using both makes it easier to separate fundamental
+          mechanics from numerical complexity.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Validation Matters
+        </h3>
+
+        <p>
+          A computational result becomes substantially more useful when it
+          can be compared against an independent analytical or experimental
+          reference.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Optimization Requires Physical Interpretation
+        </h3>
+
+        <p>
+          A numerically good fit does not automatically imply a physically
+          meaningful model. Parameter sensitivity and mechanics still need
+          to be evaluated.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Visualization Improves Model Development
+        </h3>
+
+        <p>
+          Interactive plotting made it easier to identify parameter
+          sensitivity, compare trends, and communicate the behavior of
+          the model.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================
+       NEXT PROJECT
+  ========================================= -->
+
+  <section class="next-project">
+
+    <p class="section-label">
+      NEXT PROJECT
+    </p>
+
+    <a href="dual-stuffing-box.html">
+      Dual Stuffing Box →
+    </a>
+
+  </section>
+
+
+</body>
+
+</html>
